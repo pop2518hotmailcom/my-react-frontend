@@ -5,7 +5,7 @@ import TestApi from './components/TestApi';
 import TestMongo from './components/TestMongo';
 import RequireAuth from './middleware/RequireAuth';
 import Profile from './components/Profile';
-import Login from './components/login';
+import Login from './components/Login';
 import Logout from './components/Logout';
 
 function App() {

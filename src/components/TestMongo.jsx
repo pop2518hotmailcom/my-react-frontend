@@ -7,7 +7,7 @@ export default function TestMongo () {
   const API_URL = import.meta.env.VITE_API_URL;
 
   async function fetchMongoData () {
-    const result = await fetch(`${API_URL}/mongo_test`);
+    const result = await fetch(`${API_URL}/api/mongo_test`);
     const data = await result.json();
     setData(data);
   }

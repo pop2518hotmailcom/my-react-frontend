@@ -21,7 +21,7 @@ export function UserProvider ({children}) {
 
   const login = async (email, password) => {
     try {
-      const result = await fetch(`${API_URL}/user/login`, {
+      const result = await fetch(`${API_URL}/api/user/login`, {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ export function UserProvider ({children}) {
   }
 
   const logout = async () => {
-    const result = await fetch(`${API_URL}/user/logout`, {
+    const result = await fetch(`${API_URL}/api/user/logout`, {
       method: "POST",
       credentials: "include"
     });

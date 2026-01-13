@@ -10,6 +10,7 @@ export default function Profile () {
   const fileInputRef = useRef(null);
 
   const API_URL = import.meta.env.VITE_API_URL;
+  console.log(`URL => ${API_URL}`);
 
   async function onUpdateImage () {
     const file = fileInputRef.current?.files[0];

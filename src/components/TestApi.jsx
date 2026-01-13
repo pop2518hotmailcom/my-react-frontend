@@ -6,6 +6,7 @@ export default function TestApi () {
   const API_URL = import.meta.env.VITE_API_URL;
 
   async function fetchData() {
+    console.log(`URL => ${API_URL}/hello`);
     const result = await fetch(`${API_URL}/hello`);
     const data = await result.json();
     console.log("result: ", result);

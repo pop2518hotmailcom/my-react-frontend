@@ -20,7 +20,7 @@ export default function Profile () {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      const response = await fetch(`${API_URL}/api/user/profile/image`, {
+      const response = await fetch(`${API_URL}/user/profile/image`, {
         method: "POST",
         body: formData,
         credentials: "include"
@@ -37,7 +37,7 @@ export default function Profile () {
   }
 
   async function fetchProfile () {
-    const result = await fetch(`${API_URL}/api/user/profile`, {
+    const result = await fetch(`${API_URL}/user/profile`, {
       credentials: "include"
     });
     if (result.status == 401) {

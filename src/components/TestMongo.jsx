@@ -4,8 +4,10 @@ export default function TestMongo () {
 
   const [data, setData] = useState([]);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   async function fetchMongoData () {
-    const result = await fetch('http://localhost:3000/api/mongo_test');
+    const result = await fetch(`${API_URL}/mongo_test`);
     const data = await result.json();
     setData(data);
   }
